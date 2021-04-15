@@ -1,0 +1,46 @@
+* Image Segmentation of MicroCT Scan of Sandstone
+
+** Tutorials followed
+- [[https://www.youtube.com/watch?v=AOfzlVi-NJs][56 - What are features in machine learning?]]
+- [[https://www.youtube.com/watch?v=yUATC9tt7OM][57 - How to generate features in Python for machine learning?]]
+- [[https://www.youtube.com/watch?v=QEz4bG9P3Qs][58 - What are Gabor filters?]]
+- [[https://www.youtube.com/watch?v=BTbIS1mriuY][61 - How to create Gabor feature banks for machine learning]]
+- [[https://www.youtube.com/watch?v=OUCwt8loM6s][62 - Image Segmentation using traditional machine learning - The plan]]
+- [[https://www.youtube.com/watch?v=6yW31TT6-wA][63 - Image Segmentation using traditional machine learning Part1 - FeatureExtraction]]
+- [[https://www.youtube.com/watch?v=XmRKkMjD8hM][64 - Image Segmentation using traditional machine learning - Part2 Training RF]]
+- [[https://www.youtube.com/watch?v=FT64YzD1KQI][65 - Image Segmentation using traditional machine learning - Part3 Feature Ranking]]
+- [[https://www.youtube.com/watch?v=f205EmfXi84][66 - Image Segmentation using traditional machine learning - Part4 Pickling Model]]
+- [[ttps://www.youtube.com/watch?v=LsuCjbUoI7A][67 - Image Segmentation using traditional machine learning - Part5 Segmenting Images]]
+- [[https://www.youtube.com/watch?v=sD2xL36Xdu0][67b - Feature based image segmentation using traditional machine learning. (Multi-training images)]]
+
+** Dataset
+For the purpose of this project, we have planned to use the MicroCT Scan of Sandstone obtained from this repo [[https://github.com/bnsreenu/python_for_microscopists/tree/master/images][bnsreenu/python_for_microscopists]], which contains the train images and the train masks of the Sandstone image.     
+
+** Project Idea
+
+/In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images./[1]
+
+- Segmentation Techniques :
+  - Classical approach
+  - Traditional Machine Learning approach (Our Approach)
+  - Deep Learning approach
+
+For our project we will implement semantic image segmentation to locate the Quartz, Pore, Clay and Heavy materials in the sandstone microscopic image. 
+
+We will be using traditional machine learning algorithms for the purpose of image segmentation.
+We will be using multiple feature extraction filters like Gaussian Blur, Sobel Filter, Gabor Filter for feature extraction. The original image, the image obtained after applying the filters and the mask image (label) will give the final dataset. The mask image contains 4 classes which includes Quartz, Pore, Clay and Heavy materials. The train data will then be fed into multiple machine learning algorithms. We will then use evaluation metrics of Precision, Recall, F-score, and Accuracy of the model on the test set. The importance of the different features obtained from using different filters will also be analyzed.
+The algorithm with better performance will then be used to obtain the segmented image of the new MicroCT scan image of sandstone.
+
+[[./reports/figures/ML_MINI_FLOW_3.png]]
+
+** Implementation 
+ - The directory structure is inspired from [[https://drivendata.github.io/cookiecutter-data-science/#getting-started][Cookiecutter Data Science]]
+
+** References
+[1] https://www.wikiwand.com/en/Image_segmentation
+
+** Team 
+ - Utsav Darlami (14)    
+ - Babin Joshi   (19)
+ - Gyanas Luitel (27)
+ - Niraj Tamang  (47)     

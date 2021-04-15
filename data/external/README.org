@@ -1,0 +1,3 @@
+
+* About the Dataset
+For the purpose of this project, we have planned to use the MicroCT Scan of Sandstone obtained from this repo [[https://github.com/bnsreenu/python_for_microscopists/tree/master/images][bnsreenu/python_for_microscopists]], which contains the train images and the train masks of the Sandstone image.     

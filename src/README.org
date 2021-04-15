@@ -1,0 +1,9 @@
+* About src
+- 01
+  - for feature extraction
+- 02
+  - for training the model
+- 03
+  - for testing the model results
+- 04
+  - generating segmented images
