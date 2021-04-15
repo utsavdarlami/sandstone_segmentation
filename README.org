@@ -10,7 +10,7 @@
 - [[https://www.youtube.com/watch?v=XmRKkMjD8hM][64 - Image Segmentation using traditional machine learning - Part2 Training RF]]
 - [[https://www.youtube.com/watch?v=FT64YzD1KQI][65 - Image Segmentation using traditional machine learning - Part3 Feature Ranking]]
 - [[https://www.youtube.com/watch?v=f205EmfXi84][66 - Image Segmentation using traditional machine learning - Part4 Pickling Model]]
-- [[ttps://www.youtube.com/watch?v=LsuCjbUoI7A][67 - Image Segmentation using traditional machine learning - Part5 Segmenting Images]]
+- [[https://www.youtube.com/watch?v=LsuCjbUoI7A][67 - Image Segmentation using traditional machine learning - Part5 Segmenting Images]]
 - [[https://www.youtube.com/watch?v=sD2xL36Xdu0][67b - Feature based image segmentation using traditional machine learning. (Multi-training images)]]
 
 ** Dataset
@@ -18,7 +18,7 @@ For the purpose of this project, we have planned to use the MicroCT Scan of Sand
 
 ** Project Idea
 
-/In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images./[1]
+/In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images./ [1]
 
 - Segmentation Techniques :
   - Classical approach
