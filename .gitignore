@@ -1,6 +1,7 @@
 build/
 
 data/processed/single_image_dataset.csv
+data/processed/final_dataset.csv
 
 # jupyter notebooks
 .ipynb_checkpoints

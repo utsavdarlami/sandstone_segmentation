@@ -36,6 +36,11 @@ The algorithm with better performance will then be used to obtain the segmented 
 ** Implementation 
  - The directory structure is inspired from [[https://drivendata.github.io/cookiecutter-data-science/#getting-started][Cookiecutter Data Science]]
 
+** Usage 
+- You should have ~make~ installed in your system
+- To prepare dataset run :
+  - ~$ make dataset~
+  - ~final_dataset.csv~ will be generated in ./data/processed/ directory
 ** References
 [1] https://www.wikiwand.com/en/Image_segmentation
 
