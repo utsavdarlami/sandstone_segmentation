@@ -23,7 +23,7 @@ def get_single_image_dataframe(imagepath, maskpath):
 
 
 if __name__ == "__main__":
-
+    print("Preparing Dataset")
     BASE_DIR = os.getcwd()
     data_dir = BASE_DIR + "/data/raw/"
     images_path = data_dir + "Train_images/"
