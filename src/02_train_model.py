@@ -4,7 +4,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 import seaborn as sns
+import matplotlib.pyplot as plt
 import pickle
+import numpy as np
 
 print("Preparing to Train the Model")
 BASE_DIR = os.getcwd()
@@ -66,7 +68,7 @@ print('Normalized Confusion Matrix')
 print(np.round(n_cf_matrix, 3))
 
 #Visualizing normalized confusion matrix
-ccfplot1 = sns.heatmap(np.round(n_cf_matrix, 3), 
+ncfplot1 = sns.heatmap(np.round(n_cf_matrix, 3), 
             annot=True,
             xticklabels = categories,
             yticklabels = categories)
@@ -85,10 +87,3 @@ pcfplot2.figure.savefig('results/percentage_cf_matrix.png')
 
 # Saving model to disk
 pickle.dump(dtree, open('./models/dtree.pkl','wb'))
-
-
-
-
-
-
-
