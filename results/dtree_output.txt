@@ -1,0 +1,32 @@
+Preparing to Train the Model
+Our Decision Tree Model
+DecisionTreeClassifier()
+Training the model
+Preparing to Train the Model
+Our Decision Tree Model
+DecisionTreeClassifier()
+Training the model
+Evaluating the model
+Classification Report
+              precision    recall  f1-score   support
+
+          29       0.99      0.99      0.99    156712
+          76       0.99      0.98      0.98    131137
+         150       0.78      0.78      0.78     13646
+         226       0.98      0.98      0.98      4477
+
+    accuracy                           0.98    305972
+   macro avg       0.93      0.93      0.93    305972
+weighted avg       0.98      0.98      0.98    305972
+
+Accuracy: 0.98
+Confusion Matrix
+[[154682    454   1573      3]
+ [   513 129062   1470     92]
+ [  1570   1431  10645      0]
+ [     4     75      0   4398]]
+Normalized Confusion Matrix
+[[0.987 0.003 0.115 0.001]
+ [0.003 0.984 0.108 0.021]
+ [0.01  0.011 0.78  0.   ]
+ [0.    0.001 0.    0.982]]
