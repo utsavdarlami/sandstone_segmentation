@@ -2,6 +2,7 @@ from feature_extraction import all_feature_extractor
 import os
 import cv2
 import pandas as pd
+import sys
 
 
 def get_single_image_dataframe(imagepath, maskpath):
@@ -23,13 +24,16 @@ def get_single_image_dataframe(imagepath, maskpath):
 
 
 if __name__ == "__main__":
-    print("Preparing Dataset")
+
+    no_of_images = int(sys.argv[1])
+    print(f"Preparing Dataset with {no_of_images} images")
+
     BASE_DIR = os.getcwd()
     data_dir = BASE_DIR + "/data/raw/"
     images_path = data_dir + "Train_images/"
     masks_path = data_dir + "Train_masks/"
-    images = sorted(os.listdir(images_path))
-    masks = sorted(os.listdir(masks_path))
+    images = sorted(os.listdir(images_path))[:no_of_images]
+    masks = sorted(os.listdir(masks_path))[:no_of_images]
     final_dataframe = pd.DataFrame()
 
     for image, mask in zip(images, masks):

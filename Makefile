@@ -1,7 +1,6 @@
 dataset:
 	mkdir -p ./data/processed
-	python ./src/prepare_dataset.py	
-  
+	python ./src/prepare_dataset.py	$(n_images)
 train:
 	mkdir -p models
 	mkdir -p results
