@@ -31,9 +31,10 @@ for p in ax.patches:
     j = p.get_height()
     ax.annotate(percentage, (i, j), ha='center', va='center')
 plt.tight_layout()
-plt.savefig('results/mask_count_histplot.png')
+plt.show()
+ax.figure.savefig('results/mask_count_histplot.png')
 
-
+del ax
 # Splitting final_dataframe into features and target
 X = final_dataframe.drop('Mask_label', axis=1)
 y = final_dataframe['Mask_label']
@@ -61,7 +62,7 @@ print(f"Accuracy: {accuracy_score(y_test, predictions):.2f}")
 
 # Confusion Matrix
 cf_matrix = confusion_matrix(y_test, predictions)
-categories = ["29", "76", "150", "179"]
+categories = ["29", "76", "150", "226"]
 print('Confusion Matrix')
 print(cf_matrix)
 
@@ -76,6 +77,7 @@ ncfplot1 = sns.heatmap(np.round(n_cf_matrix, 3),
                        xticklabels=categories,
                        yticklabels=categories)
 ncfplot1.figure.savefig('results/normalized_cf_matrix.png')
+plt.show()
 
 # Percentage Confusion Matrix
 pcfplot2 = sns.heatmap(cf_matrix/np.sum(cf_matrix),
@@ -85,6 +87,7 @@ pcfplot2 = sns.heatmap(cf_matrix/np.sum(cf_matrix),
                        xticklabels=categories,
                        yticklabels=categories)
 pcfplot2.figure.savefig('results/percentage_cf_matrix.png')
+plt.show()
 
 # Pickling the model
 # Saving model to disk

@@ -4,7 +4,6 @@ import cv2
 import pandas as pd
 import sys
 
-
 def get_single_image_dataframe(imagepath, maskpath):
     """
     Creating a single dataframe by reshaping
@@ -17,9 +16,11 @@ def get_single_image_dataframe(imagepath, maskpath):
     for i, feature in enumerate(all_feature_dict):
         single_image_dataframe[feature] = all_feature_dict[feature].reshape(-1)
 
-    read_mask_gray = cv2.imread(maskpath, 0)
+    read_mask = cv2.imread(maskpath)
+    read_mask_gray = cv2.cvtColor(read_mask, cv2.COLOR_BGR2GRAY)
+    
     single_image_dataframe["Mask_label"] = read_mask_gray.reshape(-1)
-
+  
     return single_image_dataframe
 
 
