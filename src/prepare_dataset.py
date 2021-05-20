@@ -4,7 +4,8 @@ import cv2
 import pandas as pd
 import sys
 
-def get_single_image_dataframe(imagepath, maskpath):
+
+def get_single_image_dataframe(imagepath):
     """
     Creating a single dataframe by reshaping
     the features in the all_feature_dict
@@ -16,11 +17,6 @@ def get_single_image_dataframe(imagepath, maskpath):
     for i, feature in enumerate(all_feature_dict):
         single_image_dataframe[feature] = all_feature_dict[feature].reshape(-1)
 
-    read_mask = cv2.imread(maskpath)
-    read_mask_gray = cv2.cvtColor(read_mask, cv2.COLOR_BGR2GRAY)
-    
-    single_image_dataframe["Mask_label"] = read_mask_gray.reshape(-1)
-  
     return single_image_dataframe
 
 
@@ -41,10 +37,17 @@ if __name__ == "__main__":
         print(f"- Extracting the features from {image}")
 
         image_path = os.path.join(images_path, image)
+        single_image_dataframe = get_single_image_dataframe(image_path)
+
+        """
+        Add Mask label
+        """
         mask_path = os.path.join(masks_path, mask)
-        single_image_dataframe = get_single_image_dataframe(image_path,
-                                                            mask_path,
-                                                            )
+        read_mask = cv2.imread(mask_path)
+        read_mask_gray = cv2.cvtColor(read_mask, cv2.COLOR_BGR2GRAY)
+        single_image_dataframe["Mask_label"] = read_mask_gray.reshape(-1)
+
+        # Concat the single dataframe with other image df
         final_dataframe = pd.concat([final_dataframe, single_image_dataframe],
                                     ignore_index=True,
                                     axis=0,

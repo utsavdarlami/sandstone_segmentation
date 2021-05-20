@@ -44,6 +44,10 @@ The algorithm with better performance will then be used to obtain the segmented 
 - To train the model:
   - ~$ make train~
   - ~dtree.pkl~ will be generated in ./models/ directory
+- To predict using model
+  - ~$ make predict img="image_path"~
+  - A mask image will be obtained on ./results/ directory
+
 ** References
 [1] https://www.wikiwand.com/en/Image_segmentation
 
