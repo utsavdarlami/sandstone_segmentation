@@ -34,7 +34,7 @@ if __name__ == "__main__":
     dice_score = f1_score(real_mask_gray_reshaped, obtained_mask_gray_reshaped, average=None)
 
     for score, label in zip(dice_score, labels):
-        print(f"For{label}, the score is: {score:.2f}")
+        print(f"For {label}, the score is: {score:.2f}")
 
 
 
