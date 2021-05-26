@@ -21,9 +21,11 @@ if __name__ == "__main__":
 
     iou_score = jaccard_score(real_mask_gray_reshaped, obtained_mask_gray_reshaped, average=None)
 
+    labels = [29, 76, 150, 226]
+
     print("The IOU Scores of predicted segmented mask:")
     for score, label in zip(iou_score, labels):
-        print(f"The IOU Score for {label} is: {score:.2f}")
+        print(f"For {label}, the score is: {score:.2f}")
 
 
     print()
@@ -32,7 +34,7 @@ if __name__ == "__main__":
     dice_score = f1_score(real_mask_gray_reshaped, obtained_mask_gray_reshaped, average=None)
 
     for score, label in zip(dice_score, labels):
-        print(f"The Dice Score for {label} is: {score:.2f}")
+        print(f"For{label}, the score is: {score:.2f}")
 
 
 
