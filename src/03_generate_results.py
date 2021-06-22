@@ -1,3 +1,4 @@
+"""Predict masks for the scan image using the trained model."""
 from prepare_dataset import get_single_image_dataframe
 import sys
 import cv2
@@ -7,7 +8,12 @@ import numpy as np
 if __name__ == "__main__":
 
     # get image path as argument
-    input_image_path = sys.argv[1]
+    if len(sys.argv) < 3:
+        print("Args are `model` and `img`")
+        exit()
+
+    model_path = sys.argv[1]
+    input_image_path = sys.argv[2]
 
     # create dataframe of all the features
     image_feature = get_single_image_dataframe(input_image_path)
@@ -17,7 +23,7 @@ if __name__ == "__main__":
     image_width = image.shape[1]
 
     # loading the model
-    model_path = './models/dtree.pkl'
+    # model_path = './models/dtree.pkl'
     loaded_model = pickle.load(open(model_path, 'rb'))
 
     # predicting the labels for a single feature
@@ -41,10 +47,11 @@ if __name__ == "__main__":
 
     heavy_index = segmented_image == 226
     new_image[heavy_index] = [255, 255, 0]  # yellow
-
-    image_name = input_image_path.split("/")[-1][:-4]
     RGB_mask = cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB)
 
-    output_name = "./results/" + image_name + "_mask.png"
+    image_name = input_image_path.split("/")[-1][:-4]
+    model_name = model_path.split("/")[-1][:-4]
+    output_name = "./results/" + image_name + "_" + model_name + "_mask.png"
     print(f"Saving the mask as {output_name}")
+
     cv2.imwrite(output_name, RGB_mask)

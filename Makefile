@@ -7,7 +7,7 @@ train:
 	python ./src/02_train_model.py >> ./results/dtree_output.txt
 
 predict:
-	python ./src/03_generate_results.py $(img)
+	python ./src/03_generate_results.py $(model) $(img)
 
 scores:
 	python ./src/04_segmentation_accuracy.py $(pred_img) $(real_img)
