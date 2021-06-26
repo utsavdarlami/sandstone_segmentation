@@ -2,115 +2,29 @@ Preparing to Train the Model
 Our Decision Tree Model
 DecisionTreeClassifier()
 Training the model
-Preparing to Train the Model
-Our Decision Tree Model
-DecisionTreeClassifier()
-Training the model
 Evaluating the model
 Classification Report
               precision    recall  f1-score   support
 
-          29       0.99      0.99      0.99    156712
-          76       0.99      0.98      0.98    131137
-         150       0.78      0.78      0.78     13646
-         226       0.98      0.98      0.98      4477
+          29       0.99      0.99      0.99    753897
+          76       0.99      0.99      0.99    705539
+         150       0.83      0.82      0.83     53203
+         226       0.99      0.98      0.98     17217
 
-    accuracy                           0.98    305972
-   macro avg       0.93      0.93      0.93    305972
-weighted avg       0.98      0.98      0.98    305972
+    accuracy                           0.99   1529856
+   macro avg       0.95      0.95      0.95   1529856
+weighted avg       0.99      0.99      0.99   1529856
 
-Accuracy: 0.98
-Confusion Matrix
-[[154682    454   1573      3]
- [   513 129062   1470     92]
- [  1570   1431  10645      0]
- [     4     75      0   4398]]
-Normalized Confusion Matrix
-[[0.987 0.003 0.115 0.001]
- [0.003 0.984 0.108 0.021]
- [0.01  0.011 0.78  0.   ]
- [0.    0.001 0.    0.982]]
-Preparing to Train the Model
-Our Decision Tree Model
-DecisionTreeClassifier()
-Training the model
-Evaluating the model
-Classification Report
-              precision    recall  f1-score   support
-
-          29       0.99      0.99      0.99    156712
-          76       0.99      0.98      0.98    131137
-         150       0.78      0.78      0.78     13646
-         226       0.98      0.98      0.98      4477
-
-    accuracy                           0.98    305972
-   macro avg       0.93      0.93      0.93    305972
-weighted avg       0.98      0.98      0.98    305972
 
 Accuracy: 0.98
 Confusion Matrix
-[[154643    443   1622      4]
- [   508 129091   1452     86]
- [  1564   1418  10664      0]
- [     3     81      0   4393]]
+[[747137   1996   4756      8]
+ [  1587 699634   4083    235]
+ [  4897   4503  43803      0]
+ [     7    405      0  16805]]
+
 Normalized Confusion Matrix
-[[0.987 0.003 0.119 0.001]
- [0.003 0.984 0.106 0.019]
- [0.01  0.011 0.781 0.   ]
- [0.    0.001 0.    0.981]]
-Preparing to Train the Model
-Our Decision Tree Model
-DecisionTreeClassifier()
-Training the model
-Evaluating the model
-Classification Report
-              precision    recall  f1-score   support
-
-          29       0.99      0.99      0.99    156712
-          76       0.98      0.98      0.98    131137
-         150       0.78      0.78      0.78     13646
-         226       0.98      0.98      0.98      4477
-
-    accuracy                           0.98    305972
-   macro avg       0.93      0.93      0.93    305972
-weighted avg       0.98      0.98      0.98    305972
-
-Accuracy: 0.98
-Confusion Matrix
-[[154643    463   1602      4]
- [   497 129093   1470     77]
- [  1579   1443  10624      0]
- [     2     82      0   4393]]
-Normalized Confusion Matrix
-[[0.987 0.004 0.117 0.001]
- [0.003 0.984 0.108 0.017]
- [0.01  0.011 0.779 0.   ]
- [0.    0.001 0.    0.981]]
-Preparing to Train the Model
-Our Decision Tree Model
-DecisionTreeClassifier()
-Training the model
-Evaluating the model
-Classification Report
-              precision    recall  f1-score   support
-
-          29       0.99      0.99      0.99    156712
-          76       0.99      0.98      0.98    131137
-         150       0.78      0.78      0.78     13646
-         226       0.98      0.98      0.98      4477
-
-    accuracy                           0.98    305972
-   macro avg       0.93      0.93      0.93    305972
-weighted avg       0.98      0.98      0.98    305972
-
-Accuracy: 0.98
-Confusion Matrix
-[[154683    444   1582      3]
- [   499 129071   1484     83]
- [  1574   1430  10642      0]
- [     0     84      0   4393]]
-Normalized Confusion Matrix
-[[0.987 0.003 0.116 0.001]
- [0.003 0.984 0.109 0.019]
- [0.01  0.011 0.78  0.   ]
- [0.    0.001 0.    0.981]]
+[[0.991 0.003 0.089 0.   ]
+ [0.002 0.992 0.077 0.014]
+ [0.006 0.006 0.823 0.   ]
+ [0.    0.001 0.    0.976]]

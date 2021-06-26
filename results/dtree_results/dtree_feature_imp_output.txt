@@ -1,0 +1,37 @@
+Preparing to Train the Model
+['gabor_4', 'gabor_5', 'gabor_6', 'gabor_7', 'gabor_10', 'gabor_11',
+       'gabor_18', 'gabor_19', 'gabor_20', 'gabor_21', 'gabor_22', 'gabor_23',
+       'gabor_26', 'gabor_27', 'gabor_28', 'gabor_29', 'gabor_30', 'gabor_31',
+       'gabor_36', 'gabor_37', 'gabor_38', 'gabor_39', 'gabor_42', 'gabor_43',
+       'Original', 'Entropy', 'Gaussian3', 'Gaussian7', 'Sobel', 'Canny',
+       'Robert', 'Scharr', 'Prewitt', 'Median', 'Variance']
+Our Decision Tree Model
+DecisionTreeClassifier()
+Training the model
+Evaluating the model
+Classification Report
+              precision    recall  f1-score   support
+
+          29       0.99      0.99      0.99    753897
+          76       0.99      0.99      0.99    705539
+         150       0.83      0.82      0.83     53203
+         226       0.99      0.98      0.98     17217
+
+    accuracy                           0.99   1529856
+   macro avg       0.95      0.95      0.95   1529856
+weighted avg       0.99      0.99      0.99   1529856
+
+
+Accuracy: 0.98
+Confusion Matrix
+[[747139   1990   4761      7]
+ [  1601 699631   4078    229]
+ [  4902   4503  43798      0]
+ [     7    395      0  16815]]
+
+
+Normalized Confusion Matrix
+[[0.991 0.003 0.089 0.   ]
+ [0.002 0.992 0.077 0.013]
+ [0.007 0.006 0.823 0.   ]
+ [0.    0.001 0.    0.977]]
