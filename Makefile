@@ -11,3 +11,6 @@ predict:
 
 scores:
 	python ./src/04_segmentation_accuracy.py $(pred_img) $(real_img)
+
+multi_otsu:
+	python ./src/multi_otsu.py $(img)
