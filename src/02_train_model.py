@@ -45,7 +45,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,
                                                     test_size=0.30,
                                                     random_state=101)
 
-dtree = DecisionTreeClassifier()
+dtree = DecisionTreeClassifier(max_depth=12, random_state=42)
 print("Our Decision Tree Model")
 print(dtree)
 
