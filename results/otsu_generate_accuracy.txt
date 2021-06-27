@@ -1,0 +1,12 @@
+python ./src/04_segmentation_accuracy.py results/Sandstone_Versa0250_otsu_mask.png data/raw/Test_masks/Sandstone_Versa0250.tif
+The IOU Scores of predicted segmented mask:
+For label 29, the score is: 0.70
+For label 76, the score is: 0.92
+For label 150, the score is: 0.11
+For label 226, the score is: 0.84
+
+The Dice Scores of predicted segmented mask:
+For label 29, the score is: 0.82
+For label 76, the score is: 0.96
+For label 150, the score is: 0.20
+For label 226, the score is: 0.92
