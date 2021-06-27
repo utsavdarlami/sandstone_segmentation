@@ -26,7 +26,7 @@ The algorithm with better performance will then be used to obtain the segmented 
 ** Usage 
 - You should have ~make~ installed in your system
 - To prepare dataset run :
-  - ~$ make dataset~ n_images=5
+  - ~$ make dataset n_images=5~
   - ~final_dataset.csv~ will be generated in ./data/processed/ directory
 - To train the model:
   - decision tree
