@@ -6,6 +6,11 @@ train:
 	mkdir -p results
 	python ./src/02_train_model.py >> ./results/dtree_output.txt
 
+train_rf:
+	mkdir -p models
+	mkdir -p results
+	python ./src/02c_train_rf.py >> ./results/rf_results/rf_output.txt
+
 predict:
 	python ./src/03_generate_results.py $(model) $(img)
 
