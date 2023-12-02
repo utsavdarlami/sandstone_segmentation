@@ -49,19 +49,8 @@ The algorithm with better performance will then be used to obtain the segmented 
 ** References
 [1] https://www.wikiwand.com/en/Image_segmentation
 
-** Tutorials followed
-- [[https://www.youtube.com/watch?v=AOfzlVi-NJs][56 - What are features in machine learning?]]
-- [[https://www.youtube.com/watch?v=yUATC9tt7OM][57 - How to generate features in Python for machine learning?]]
-- [[https://www.youtube.com/watch?v=QEz4bG9P3Qs][58 - What are Gabor filters?]]
-- [[https://www.youtube.com/watch?v=BTbIS1mriuY][61 - How to create Gabor feature banks for machine learning]]
-- [[https://www.youtube.com/watch?v=OUCwt8loM6s][62 - Image Segmentation using traditional machine learning - The plan]]
-- [[https://www.youtube.com/watch?v=6yW31TT6-wA][63 - Image Segmentation using traditional machine learning Part1 - FeatureExtraction]]
-- [[https://www.youtube.com/watch?v=XmRKkMjD8hM][64 - Image Segmentation using traditional machine learning - Part2 Training RF]]
-- [[https://www.youtube.com/watch?v=FT64YzD1KQI][65 - Image Segmentation using traditional machine learning - Part3 Feature Ranking]]
-- [[https://www.youtube.com/watch?v=f205EmfXi84][66 - Image Segmentation using traditional machine learning - Part4 Pickling Model]]
-- [[https://www.youtube.com/watch?v=LsuCjbUoI7A][67 - Image Segmentation using traditional machine learning - Part5 Segmenting Images]]
-- [[https://www.youtube.com/watch?v=sD2xL36Xdu0][67b - Feature based image segmentation using traditional machine learning. (Multi-training images)]]
-
+** Report
+- ./Final_Report_Sandstone_Segmentation.pdf
 
 ** Team 
  - Utsav Darlami (14)    
