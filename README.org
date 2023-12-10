@@ -1,4 +1,6 @@
 * Image Segmentation of MicroCT Scan of Sandstone
+** Detail Report
+- [[https://github.com/utsavdarlami/sandstone_segmentation/blob/main/Final_Report_Sandstone_Segmentation.pdf][Final Report on Sandstone Segmentation]]
 
 ** Dataset
 For the purpose of this project, we have planned to use the MicroCT Scan of Sandstone obtained from this repo [[https://github.com/bnsreenu/python_for_microscopists/tree/master/images][bnsreenu/python_for_microscopists]], which contains the train images and the train masks of the Sandstone image.     
@@ -48,9 +50,6 @@ The algorithm with better performance will then be used to obtain the segmented 
 
 ** References
 [1] https://www.wikiwand.com/en/Image_segmentation
-
-** Report
-- ./Final_Report_Sandstone_Segmentation.pdf
 
 ** Team 
  - Utsav Darlami (14)    
